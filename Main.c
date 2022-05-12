@@ -21,7 +21,7 @@ int main(void)
 	{
 		printf("0x%02x", c);
 		c = fgetc(fp);		//呼ばれる度に次のバイトを読み込んでいく
-		if (feof(fp)) break;	//変数cがファイルの末端を読み込んだならループ終了
+		if (feof(fp)) break;	//変数cがファイルの終端を読み込んだならループ終了
 		printf(",");	
 	}
 	
